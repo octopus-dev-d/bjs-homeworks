@@ -21,6 +21,10 @@ function getAverageMark(marks){
     let averageMark = '';
     const numberMarks = 5;
 
+    if (marks.length == 0) {
+        return 0;
+    }
+
     for (let i = 0; i < marks.length; i++) {
         sumResult = sumResult + marks[i];
 
